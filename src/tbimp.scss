@@ -1,0 +1,73 @@
+@import "./typebase.scss";
+
+
+h1, h2, h3, h4, h5,h6{
+font-family: 'Montserrat' , sans-serif;
+}
+
+
+.container{
+ max-width: 800px;
+margin: 0 auto;
+}
+
+#pageFooter{
+text-align: center;
+padding: 2rem;
+}
+
+li input[type=checkbox]{
+  margin-right: 1em;
+}
+
+code{
+padding: 0 2px;
+font-size: 80%;
+padding: 0.2em 0.4em;
+line-height: $leading;
+background-color: rgba(0,0,0,.1);
+border-radius: 4px;
+}
+
+pre code{
+display: block;
+background-color: rgba(0,0,0,.1);
+padding: 1rem;
+line-height: $leading;
+font-size: 1em;
+margin-top: $leading;
+margin-bottom: 0;
+border-radius: 4px;
+}
+p img{
+display: block;
+margin: 0 auto;
+max-width: 100%;
+}
+
+table{
+border-collapse: collapse;
+}
+
+td, th{
+padding: 0.5rem 1rem;
+text-align: left;
+vertical-align: top;
+}
+
+hr{
+margin-top: $leading;
+margin-bottom: 0;
+border: none;
+height: 3px;
+background-color: black;
+}
+
+th{
+background-color: transparent;
+}
+
+tr:nth-child(odd) td{
+background-color: rgba(0,0,0,.1);
+}
+  
