@@ -5,8 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 2",
-    "typebase": "sass src/tbimp.scss:dist/tbase.css"
+    "typebase": "sass src/tbimp.scss:dist/tbase.css --style compressed"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.52.2"
+  }
 }
