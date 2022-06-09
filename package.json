@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 2",
-    "typebase": "sass src/tbimp.scss:dist/tbase.css --style compressed"
+    "typebase": "sass src/tbimp.scss:dist/tbase.css --style compressed",
+    "netart": "sass src/netart.scss:dist/netart.css --style compressed",
+    "netart-watch": "sass src/netart.scss:dist/netart.css --watch"
   },
   "author": "",
   "license": "ISC",

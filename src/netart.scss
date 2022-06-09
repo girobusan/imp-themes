@@ -1,0 +1,200 @@
+@use "./normalize.css";
+// @use "./typebase.scss";
+$fontsize: 16px;
+$leading: 32px;
+
+body, html{
+  margin: 0 ;
+  padding: 0;
+  min-width: 100%;
+  font-size: $fontsize;
+  line-height: $leading;
+  font-family: sans-serif;
+  background-color: white;
+  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p, ul, ol,
+hr,
+h1,h2,h3,h4,h5,h6{
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  @media(max-width: 800px){
+    margin-left: $leading;
+    margin-right: $leading;
+  }
+}
+
+ul,ol{
+  margin-top: $leading;
+  margin-bottom: $leading;
+}
+
+ul li{
+  list-style: none;
+  &::before{
+    content: "—";
+    margin-right: $fontsize;
+  }
+}
+
+h1,h2,h3,h4,h5,h6{
+  margin-bottom: $leading;
+  margin-top: 2*$leading;
+  color: black;
+}
+
+hr{
+  margin-top: $leading;
+  margin-bottom: $leading;
+  display: block;
+  border: none;
+  height: 1px;
+  background-color: black;
+}
+
+h1{
+  font-size: 4rem;
+  line-height: 100%;
+  margin-bottom: 2*$leading;
+  margin-top: 2*$leading;
+  font-weight: 500;
+  color: slategray;
+}
+
+a{
+  color: royalblue;
+  &:hover{
+    color: royalblue;
+  }
+  &:visited{
+    color: black;
+  }
+  &:active{
+    color: red;
+  }
+}
+
+h1 + h2{
+  font-size: 2rem;
+  margin-bottom: 1*$leading;
+  padding-bottom: 2*$leading;
+  margin-top: -$leading;
+  color: slategray;
+  border-bottom: 1px solid slategray;
+  font-weight: 600;
+}
+
+h2{
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+h3{
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+h4{
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-top: $leading;
+}
+
+h5{
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 500;
+  margin-top: $leading;
+}
+h6{
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: $leading;
+}
+
+big{
+  font-size: 1.2*$fontsize;
+  line-height: $leading;
+}
+
+small{
+  font-size: 0.8*$fontsize;
+  line-height: 0.5*$leading;
+  letter-spacing: 0.05rem;
+}
+
+.container > img{
+  display: block;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2*$leading;
+  margin-top: $leading;
+
+}
+
+.container{
+  padding-bottom: 2*$leading;
+}
+
+body > footer{
+  padding: 2*$leading;
+  background-color: slategray;
+  color: white;
+  a{
+    color: white !important;
+    
+  }
+}
+
+code{
+  font-family: monospace;
+  padding: 0 4px;
+  border-radius: 2px;
+background-color: #c1c8cf;
+}
+
+pre code{
+  max-width: 1200px;
+  display: block;
+  margin: $leading auto;
+background-color: #b3c1cf;
+padding: $leading;
+color: black;
+}
+
+
+table{
+  margin: $leading auto;
+  border-collapse: collapse;
+  margin-bottom: 2*$leading;
+  @media(max-width: 800px){
+    margin-right: $leading;
+    margin-left: $leading;
+    font-size: 0.8*$fontsize;
+    line-height: 0.5*$leading;
+  }
+  td,th{
+    padding: calc($leading/4) calc($leading/2);
+    vertical-align: top;
+    text-align: left;
+  }
+  th{
+    font-weight: 600;
+    padding-left: 0;
+    padding-right: $leading;
+  }
+  td{
+
+    border: 1px solid gray;
+  }
+}
+
+li label{
+  margin-left: $fontsize;
+}
