@@ -1,4 +1,5 @@
 @use "./normalize.css";
+@use "./materia.min.css";
 // @use "./typebase.scss";
 $fontsize: 16px;
 $leading: 32px;
@@ -25,6 +26,11 @@ h1,h2,h3,h4,h5,h6{
     margin-left: $leading;
     margin-right: $leading;
   }
+}
+
+p{
+  margin-top: 0;
+  margin-bottom: $leading;
 }
 
 ul,ol{
@@ -104,7 +110,7 @@ h4{
 }
 
 h5{
-  font-size: 1rem;
+  font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   font-weight: 500;
@@ -152,6 +158,25 @@ body > footer{
   }
 }
 
+blockquote{
+   font-size: 1.2rem;
+   margin: $leading;
+   margin-left: auto;
+   margin-right: auto;
+   padding: $leading 0;
+   color: slategray;
+   max-width: 800px;
+   border-top: 2px solid slategray;
+   border-bottom: 2px solid slategray;
+   & > * {
+     max-width: 100%;
+     &:last-child{
+       margin-bottom: 0;
+     }
+   }
+
+}
+
 code{
   font-family: monospace;
   padding: 0 4px;
@@ -160,12 +185,12 @@ background-color: #c1c8cf;
 }
 
 pre code{
-  max-width: 1200px;
+  max-width: 800px;
   display: block;
   margin: $leading auto;
-background-color: #b3c1cf;
+background-color: #263238;
 padding: $leading;
-color: black;
+color: #cdd3de;
 }
 
 

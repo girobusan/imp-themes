@@ -5,8 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>IMP! Netart theme</title>
   <meta name="description" content="">
-  <meta name="author" content="">
-  <meta name="keywords" content="">
   <meta name="og:title" content="IMP! Netart theme">
   <meta name="og:description" content="IMP! peconfigured CDN">
   <meta name="og:image" content="">
@@ -28,9 +26,7 @@
   "css": "\n  ",
   "headHTML": "",
   "editor": "https://cdn.jsdelivr.net/gh/girobusan/imp@latest/dist/imp.js",
-  "viewCSS": "netart.css",
-  "author": "",
-  "keywords": ""
+  "viewCSS": "netart.css"
 }
   </script>
   <script>
@@ -65,8 +61,8 @@ window.addEventListener("hashchange", ()=>history.go(0));
 <body>
 <div class='container'><p><a href="https://girobusan.github.io">Girobusan</a> | <a href="https://girobusan.github.io/imp">IMP!</a></p>
 <h1>IMP! Netart theme</h1>
-<h2>With subheader</h2>
-<p><big>This theme is based on Typebase CSS. <em>Here you see only basic</em> stylesheet without any additions. SImple, clean, readable. This style gives good sizes and whitespace proportions.</big></p>
+<h2>With optional subheading</h2>
+<p><big>The light theme for long articles with big illustrations.</big></p>
 <p>To install this theme:</p>
 <ol>
 <li>Download  <a href="tbase.css">css</a> (right click on link, choose &quot;save as&quot;)</li>
@@ -77,18 +73,22 @@ window.addEventListener("hashchange", ()=>history.go(0));
 <li>Save page</li>
 </ol>
 <ul>
-<li><input type="checkbox" id="checkbox2" checked="true"><label for="checkbox2">Checkboxes</label></li>
-<li><input type="checkbox" id="checkbox3"><label for="checkbox3">As usual</label></li>
+<li><input type="checkbox" id="checkbox4" checked="true"><label for="checkbox4">Checkboxes</label></li>
+<li><input type="checkbox" id="checkbox5"><label for="checkbox5">As usual</label></li>
 </ul>
 <h2>Second level</h2>
-<pre><code>Code block
-here
+<p>Theme is ready for syntax highlighting (IMP! version &gt; 0.2.5)</p>
+<pre><code class="language-js">//strange function
+function makeStrange(n){
+    console.log(&quot;one moment, please&quot;);
+    return strange(n);
+}
 </code></pre>
-<h3>Third level</h3>
-<p>Lorem ipsum dolor sit amet, <em>consectetur</em> adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-<hr>
+<h3>Wide image (also third level heading)</h3>
+<p>Images, added with HTML tag <code>img</code> shown full size. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<img src="https://placekitten.com/1200/600" />
 <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-<h4>Fourth level header</h4>
+<h4>Fourth level heading</h4>
 <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
 <table>
 <thead>
@@ -120,25 +120,22 @@ here
 </tr>
 </tbody>
 </table>
-<h5>Fifth level header</h5>
+<h5>Fifth level heading</h5>
 <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat <small>cupidatat non proident, sunt in culpa</small> qui officia deserunt mollit anim id est laborum</p>
-<img src="https://placekitten.com/1200/600" />
+<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat <small>cupidatat non proident, sunt in culpa</small> qui officia deserunt mollit anim id est laborum</p>
+<h4>Blockquote</h4>
+<blockquote>
+<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+</blockquote>
 <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
 </div>
 <footer id="pageFooter"><small>Powered by <a href='https://github.com/girobusan/imp'>IMP!</a> and <a href='https://matejlatin.github.io/Gutenberg/'>Gutenberg CSS</a></small></footer>
 <script id="pageData" type="text/markdown">
 
-
-
-
-
-
-
-
 [Girobusan](https://girobusan.github.io) | [IMP!](https://girobusan.github.io/imp)
 # IMP! Netart theme
-## With subheader
-&lt;big&gt;This theme is based on Typebase CSS. *Here you see only basic* stylesheet without any additions. SImple, clean, readable. This style gives good sizes and whitespace proportions.&lt;/big&gt;
+## With optional subheading
+&lt;big&gt;The light theme for long articles with big illustrations.&lt;/big&gt;
 
 To install this theme:
 
@@ -153,16 +150,21 @@ To install this theme:
 - [ ] As usual
 
 ## Second level
+Theme is ready for syntax highlighting (IMP! version &gt; 0.2.5)
+```js
+//strange function
+function makeStrange(n){
+    console.log("one moment, please");
+    return strange(n);
+}
 ```
-Code block
-here
-```
-### Third level
-Lorem ipsum dolor sit amet, *consectetur* adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+### Wide image (also third level heading)
+Images, added with HTML tag `img` shown full size. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
 
----
+&lt;img src="https://placekitten.com/1200/600" /&gt;
+
 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-#### Fourth level header
+#### Fourth level heading
 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
 
 | Header row | Of our | New table | Tables are the must|
@@ -171,12 +173,21 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
 | 87 | Cupidatat non proident | Shorter Lorem Ipsum | true |
 | 87 | Cupidatat non proident | Shorter Lorem Ipsum | true |
 
-##### Fifth level header
+##### Fifth level heading
 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat &lt;small&gt;cupidatat non proident, sunt in culpa&lt;/small&gt; qui officia deserunt mollit anim id est laborum
 
-&lt;img src="https://placekitten.com/1200/600" /&gt;
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat &lt;small&gt;cupidatat non proident, sunt in culpa&lt;/small&gt; qui officia deserunt mollit anim id est laborum
+
+#### Blockquote
+
+&gt;  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+
 
 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+
+
+
+
 
 
 
