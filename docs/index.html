@@ -13,9 +13,18 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="">
   <link rel="icon" type="image/png" href="">
-  <link id = "viewCSS" rel="stylesheet" href="tbase.css">
-  <style id="customCSS">
-  
+  <link id = "viewCSS" rel="stylesheet" href="style.css">
+  <style id="customCSS">body{
+background: linear-gradient(-45deg,rgba(255,210,210,1) 0%, rgba(150,150,255,1) 100%); 
+}
+a , a:visited {
+color: rgb(0 , 0, 120);
+background-color: rgba(255 , 255 , 255, 0.5);
+display: inline-block;
+padding: 0 6px;
+border-radius: 2px;
+margin: 0;
+}
   </style>
   <script>
    window.settings = {
@@ -25,10 +34,10 @@
   "icon": "",
   "filename": "index.html",
   "footer": "&lt;small&gt;Powered by &lt;a href='https://github.com/girobusan/imp'&gt;IMP!&lt;/a&gt; ",
-  "css": "\n  ",
-  "headHTML": "&lt;script src=\"styleswitch.js\" defer &gt;&lt;/script&gt;",
+  "css": "body{\nbackground: linear-gradient(-45deg,rgba(255,210,210,1) 0%, rgba(150,150,255,1) 100%); \n}\na , a:visited {\ncolor: rgb(0 , 0, 120);\nbackground-color: rgba(255 , 255 , 255, 0.5);\ndisplay: inline-block;\npadding: 0 6px;\nborder-radius: 2px;\nmargin: 0;\n}",
+  "headHTML": "",
   "editor": "",
-  "viewCSS": "tbase.css",
+  "viewCSS": "",
   "author": "",
   "keywords": ""
 }
@@ -67,122 +76,22 @@
    }
 })
   </script>
-  <script src="styleswitch.js" defer ></script>
+  <!--custom html here-->
 </head>
 <body>
-<div class='container'><div id="cssSwitcher" style="position: absolute; top: 16px ; left: 16px"></div>
-<h1>IMP! Themes lab</h1>
-<h2>We just getting started</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <a href="yandex.com">Ut enim ad</a> minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor <code>in reprehenderit in voluptate velit</code> esse cillum dolore eu fugiat nulla pariatur. <em>Excepteur</em> sint occaecat cupidatat <strong>non proident,</strong> sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-<ul>
-<li>Unordered list item</li>
-<li>Unordered list item</li>
-<li>Unordered list item  Ut <code>enim</code> ad minim veniam</li>
-</ul>
-<hr>
-<ol>
-<li>Ordered list item</li>
-<li>Оrdered list item</li>
-<li>Ordered list item  Ut enim ad minim veniam</li>
-</ol>
-<h2>Heding level 2</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-<pre><code class="language-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">LoremIpsum</span>(<span class="hljs-params">Lorem, Ipsum</span>){
-   <span class="hljs-comment">//basically, do nothing</span>
-	 <span class="hljs-keyword">return</span> <span class="hljs-title class_">Lorem</span> + <span class="hljs-title class_">Ipsum</span>;
-}
-</code></pre>
-<h3>Table (heading level #3)</h3>
-<table>
-<thead>
-<tr>
-<th>table</th>
-<th>header</th>
-<th>row</th>
-<th>table</th>
-<th>header with long long name</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1</td>
-<td>2</td>
-<td>3</td>
-<td>4</td>
-<td>Five</td>
-</tr>
-<tr>
-<td>Lorem ipsum dolor sit amet</td>
-<td>Excepteur sint</td>
-<td>Ut enim ad</td>
-<td>Excepteur</td>
-<td>Duis aute irure dolor in reprehenderit in voluptate velit esse</td>
-</tr>
-<tr>
-<td>1</td>
-<td>2</td>
-<td>3</td>
-<td>4</td>
-<td>Five</td>
-</tr>
-</tbody>
-</table>
-<h3>Othert things</h3>
-<h4>Image</h4>
-<p><img src="480.jpeg" alt="480.jpeg"></p>
-<h4>Quoite</h4>
-<blockquote>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-</blockquote>
+<div class='container'><h1><em>IMP!</em> Themes</h1>
+<p>This site is dedicated to <a href="https://github.com/girobusan/imp">IMP!</a> themes, you can view themes in development in <a href="sampler.html">sampler</a>. We've just started, all themes are in active development.</p>
 </div>
 <footer id="pageFooter"><small>Powered by <a href='https://github.com/girobusan/imp'>IMP!</a> </footer>
 <script id="pageData" type="text/markdown">
+# *IMP!* Themes
+
+This site is dedicated to [IMP!](https://github.com/girobusan/imp) themes, you can view themes in development in [sampler](sampler.html). We've just started, all themes are in active development.
 
 
 
-&lt;div id="cssSwitcher" style="position: absolute; top: 16px ; left: 16px"&gt;&lt;/div&gt;
 
 
-# IMP! Themes lab
-## We just getting started
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. [Ut enim ad](yandex.com) minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor `in reprehenderit in voluptate velit` esse cillum dolore eu fugiat nulla pariatur. *Excepteur* sint occaecat cupidatat **non proident,** sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-- Unordered list item
-- Unordered list item
-- Unordered list item  Ut `enim` ad minim veniam
-- --
-1. Ordered list item
-1. Оrdered list item
-1. Ordered list item  Ut enim ad minim veniam
-
-## Heding level 2
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-
-```javascript
-function LoremIpsum(Lorem, Ipsum){
-   //basically, do nothing
-	 return Lorem + Ipsum;
-}
-```
-
-### Table (heading level #3)
-
-| table | header | row | table | header with long long name|
-|--|--|--|--|--|
-| 1 | 2 | 3 | 4 | Five |
-| Lorem ipsum dolor sit amet | Excepteur sint | Ut enim ad |  Excepteur  | Duis aute irure dolor in reprehenderit in voluptate velit esse |
-| 1 | 2 | 3 | 4 | Five |
-
-### Othert things
-#### Image
-![480.jpeg](480.jpeg)
-#### Quoite 
-
-&gt; Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-&gt; sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
 
 
