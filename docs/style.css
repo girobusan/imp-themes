@@ -784,6 +784,7 @@ body, html {
 li input[type=checkbox] {
   margin: 0;
   margin-right: 6px;
+  margin-left: -1.2em;
 }
 li label {
   margin: 0;
@@ -802,10 +803,15 @@ li label {
 
 table th {
   border-bottom: 1px solid gray;
+  vertical-align: bottom;
 }
 table th, table td {
-  padding: 4px 12px;
+  padding: 0.25em 0.5em;
   text-align: left;
+  line-height: 120%;
+}
+table td {
+  border-bottom: 1px solid silver;
 }
 
 body footer#pageFooter {
@@ -817,9 +823,7 @@ body footer#pageFooter {
 }
 @media (max-width: 800px) {
   body footer#pageFooter {
-    width: calc(100% - 32px);
-    margin-left: 16px;
-    margin-right: 16px;
+    width: 100%;
   }
 }
 
