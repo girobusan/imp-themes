@@ -28,8 +28,11 @@ h1+h2{
 
 .container{
  max-width: 800px;
+ box-sizing: border-box;
 margin: 0 auto;
 padding-bottom: 2rem;
+padding-left: 1rem;
+padding-right: 1rem;
 flex-grow: 1;
 }
 
@@ -106,4 +109,6 @@ blockquote{
   padding: 0 0 $leading 0 ; 
   margin-left: 0;
   margin-right: 0;
+  font-size: 1.2em;
+  line-height: 140%;
 }
