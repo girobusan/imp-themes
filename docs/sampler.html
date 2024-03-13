@@ -13,7 +13,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="">
   <link rel="icon" type="image/png" href="">
-  <link id = "viewCSS" rel="stylesheet" href="netart.css">
+  <link id = "viewCSS" rel="stylesheet" href="tbase.css">
   <style id="customCSS">
   
   </style>
@@ -28,7 +28,7 @@
   "css": "\n  ",
   "headHTML": "&lt;script src=\"styleswitch.js\" defer &gt;&lt;/script&gt;",
   "editor": "",
-  "viewCSS": "netart.css",
+  "viewCSS": "tbase.css",
   "author": "",
   "keywords": ""
 }
@@ -70,13 +70,14 @@
   <script src="styleswitch.js" defer ></script>
 </head>
 <body>
-<div class='container'><div id="cssSwitcher" style="position: absolute; top: 16px ; left: 16px"></div>
-<h1>IMP! Themes sampler</h1>
+<div class='container'><div id="cssSwitcher" style="position: fixed; bottom: 16px ; left: 16px; padding: 8px;z-index:1000"></div>
+<p><a href="index.html"> 🎨 IMP! Themes site</a></p>
+<h1>IMP! Themes sampler: <span id="themeName">test the themes!</span> </h1>
 <h2>Test the styles</h2>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <a href="yandex.com">Ut enim ad</a> minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor <code>in reprehenderit in voluptate velit</code> esse cillum dolore eu fugiat nulla pariatur. <em>Excepteur</em> sint occaecat cupidatat <strong>non proident,</strong> sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 <ul>
 <li>Unordered list item</li>
-<li>Unordered list item</li>
+<li>Unordered list item quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
 <li>Unordered list item  Ut <code>enim</code> ad minim veniam</li>
 </ul>
 <hr>
@@ -85,6 +86,11 @@
 <li>Оrdered list item</li>
 <li>Ordered list item  Ut enim ad minim veniam</li>
 </ol>
+<h2>List with checkboxes</h2>
+<ul>
+<li><input type="checkbox" id="checkbox60" checked="true"><label for="checkbox60">Checkboxes</label></li>
+<li><input type="checkbox" id="checkbox61"><label for="checkbox61">As usual</label></li>
+</ul>
 <h2>Heding level 2</h2>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 <pre><code class="language-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">LoremIpsum</span>(<span class="hljs-params">Lorem, Ipsum</span>){
@@ -125,13 +131,20 @@
 <td>4</td>
 <td>Five</td>
 </tr>
+<tr>
+<td>The One</td>
+<td>The Two</td>
+<td>3</td>
+<td>4</td>
+<td>Five</td>
+</tr>
 </tbody>
 </table>
-<h3>Othert things</h3>
+<h3>Other things</h3>
 <h4>Image of average size</h4>
 <p><img src="dummy_600x400.png" alt=""></p>
 <h4>Wide image</h4>
-<p><img src="dummy_1400x600.png" alt="wide"></p>
+<p><img src="dummy_1400x600.png" alt="wide"> hjhjh</p>
 <h4>Quote</h4>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 <blockquote>
@@ -149,23 +162,29 @@ sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
 
 
+&lt;div id="cssSwitcher" style="position: fixed; bottom: 16px ; left: 16px; padding: 8px;z-index:1000"&gt;&lt;/div&gt;
 
+[ :art: IMP! Themes site](index.html)
 
-&lt;div id="cssSwitcher" style="position: absolute; top: 16px ; left: 16px"&gt;&lt;/div&gt;
-
-
-# IMP! Themes sampler
+&lt;h1&gt;IMP! Themes sampler: &lt;span id="themeName"&gt;test the themes!&lt;/span&gt; &lt;/h1&gt;
+	
 ## Test the styles
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. [Ut enim ad](yandex.com) minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor `in reprehenderit in voluptate velit` esse cillum dolore eu fugiat nulla pariatur. *Excepteur* sint occaecat cupidatat **non proident,** sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 - Unordered list item
-- Unordered list item
+- Unordered list item quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
 - Unordered list item  Ut `enim` ad minim veniam
 - --
 1. Ordered list item
 1. Оrdered list item
 1. Ordered list item  Ut enim ad minim veniam
+
+## List with checkboxes 
+
+- [x] Checkboxes
+- [ ] As usual
+
 
 ## Heding level 2
 
@@ -185,14 +204,15 @@ function LoremIpsum(Lorem, Ipsum){
 | 1 | 2 | 3 | 4 | Five |
 | Lorem ipsum dolor sit amet | Excepteur sint | Ut enim ad |  Excepteur  | Duis aute irure dolor in reprehenderit in voluptate velit esse |
 | 1 | 2 | 3 | 4 | Five |
+| The One | The Two | 3 | 4 | Five |
 
-### Othert things
+### Other things
 #### Image of average size
 ![](dummy_600x400.png)
 
 #### Wide image
 
-![wide](dummy_1400x600.png)
+![wide](dummy_1400x600.png) hjhjh
 
 #### Quote
 
@@ -202,6 +222,19 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 &gt; sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
