@@ -25,6 +25,9 @@ h1+h2{
   font-size: 1.5 * $scale * 1rem;
 }
 
+li input[type=checkbox]{
+
+}
 
 .container{
  max-width: 800px;
@@ -44,6 +47,7 @@ background-color: silver;
 
 li input[type=checkbox]{
   margin-right: 1em;
+  margin-left: -1.5em;
 }
 
 code , pre{
@@ -78,12 +82,27 @@ max-width: 100%;
 
 table{
 border-collapse: collapse;
+font-size: 0.8em;
+line-height: 120%;
 }
 
 td, th{
-padding: 0.5rem 1rem;
+padding: 0.5em 0.5em;
 text-align: left;
+vertical-align: bottom;
+line-height: 120%;
+}
+
+td{
+  border-right: 1px solid silver;
 vertical-align: top;
+  &:last-child{
+    border-right: 0;
+  }
+
+}
+tr:last-child{
+  border-bottom: 1px solid silver;
 }
 
 hr{
@@ -91,11 +110,27 @@ margin-top: $leading;
 margin-bottom: 0;
 border: none;
 height: 3px;
-background-color: gray;
+background-color: transparent;
+
+	margin: 20px 0;
+
+	padding: 0;
+
+	height: 10px;
+
+	border: none;
+
+	color: orange;
+
+	background-image: linear-gradient(90deg, gray, gray 33.33%, transparent 33.33%, transparent 100%);
+
+	background-size: 5px 100%;
+
 }
 
 th{
 background-color: transparent;
+font-weight: 400;
 }
 
 tr:nth-child(odd) td{
