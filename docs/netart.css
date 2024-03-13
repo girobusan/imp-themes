@@ -417,8 +417,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (max-width: 800px) {
   p, ul, ol,
-hr,
-h1, h2, h3, h4, h5, h6 {
+  hr,
+  h1, h2, h3, h4, h5, h6 {
     margin-left: 24px;
     margin-right: 24px;
   }
@@ -617,5 +617,3 @@ table td {
 li label {
   margin-left: 16px;
 }
-
-/*# sourceMappingURL=netart.css.map */

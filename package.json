@@ -8,7 +8,8 @@
     "typebase": "sass src/tbimp.scss:dist/tbase.css --style compressed",
     "netart": "sass src/netart.scss:dist/netart.css --style compressed",
     "netart-watch": "sass src/netart.scss:dist/netart.css --watch",
-    "watch": "sass -w src/netart.scss:docs/netart.css src/tbimp.scss:docs/tbase.css"
+    "watch": "sass -w src/netart.scss:test/netart.css src/tbimp.scss:test/tbase.css src/default.scss:test/style.css",
+    "build": "sass --no-source-map src/netart.scss:docs/netart.css src/tbimp.scss:docs/tbase.css src/default.scss:docs/style.css"
   },
   "author": "",
   "license": "ISC",
