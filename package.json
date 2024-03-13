@@ -11,5 +11,8 @@
     "watch": "sass -w src/netart.scss:docs/netart.css src/tbimp.scss:docs/tbase.css"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.71.1"
+  }
 }
