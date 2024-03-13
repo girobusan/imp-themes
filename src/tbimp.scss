@@ -20,7 +20,7 @@ h1, h2, h3, h4, h5,h6{
 a{ color: royalblue }
 
 h1+h2{
-  margin-top: -0.2em;
+  margin-top: 0em;
   font-weight: normal;
   font-size: 1.5 * $scale * 1rem;
 }
@@ -42,7 +42,9 @@ flex-grow: 1;
 #pageFooter{
 text-align: center;
 padding: 2rem;
-background-color: silver;
+background-color: #444;
+color: #fafafa;
+a{ color: lightblue !important}
 }
 
 li input[type=checkbox]{
@@ -138,12 +140,28 @@ background-color: rgba(0,0,0,.1);
 }
  
 blockquote{
-  border-bottom: 1px solid gray;
-  border-top: 1px solid gray;
-  border-color: gray;
-  padding: 0 0 $leading 0 ; 
+  border-bottom: 0px solid gray;
+  border-top: 0px solid gray;
+  padding: 1px 0 $leading $leading ; 
   margin-left: 0;
   margin-right: 0;
-  font-size: 1.2em;
+  font-size: 1.4em;
   line-height: 140%;
+  color: gray;
+  position: relative;
+  &:before{
+    content: " ";
+    display: block;
+    width: 10px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    background-repeat: repeat;
+    background-size: 10px 6px;
+    // border: 1px solid red;
+
+	background-image: linear-gradient(0deg, gray, gray 33.33%, transparent 33.33%, transparent 100%);
+  }
 }

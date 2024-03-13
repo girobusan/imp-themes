@@ -2,6 +2,7 @@ const styles = [
   { name: "Default" , css: "style.css" },
   { name: "NetArt" , css: "netart.css" },
   { name: "TypeBase" , css: "tbase.css" },
+  { name: "SimpleCSS" , css: "simplecss.css" },
 ]
 
 function setTheme( arr , name ){
@@ -11,6 +12,8 @@ function setTheme( arr , name ){
     const cssEl = document.getElementById("viewCSS");
     cssEl.setAttribute("href" , css);
     window.settings.viewCSS = css;
+    const nm = document.getElementById("themeName");
+    if(nm){ nm.innerHTML = name }
   }
 }
 const container = document.getElementById("cssSwitcher");

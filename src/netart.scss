@@ -1,9 +1,13 @@
 @use "./utility/normalize.css";
-@use "./hljs/materia.min.css";
+// @use "./hljs/materia.min.css";
+@use "./hljs/atom-one-light.min.css";
 @import "./utility/font_stacks.scss";
 // @use "./typebase.scss";
 $fontsize: 16px;
 $leading: 24px;
+.hljs-params{
+  color: #444;
+}
 
 body, html{
   margin: 0 ;
@@ -26,6 +30,7 @@ h1,h2,h3,h4,h5,h6{
   @media(max-width: 800px){
     margin-left: $leading;
     margin-right: $leading;
+    max-width: 100%;
   }
 }
 
@@ -33,17 +38,43 @@ p{
   margin-top: 0;
   margin-bottom: $leading;
 }
+video, audio , object , iframe , canvas, div{
+  max-width: 100%;
+  margin: $leading auto;
+}
 
 ul,ol{
   margin-top: $leading;
   margin-bottom: $leading;
+  padding-left: 0;
+}
+ol{
+  counter-reset: ol-items;
+}
+ol li{
+  list-style: none;
+ counter-increment: ol-items;
+  margin-left: $fontsize * 1.5; 
+  position: relative;
+ &::before{
+    content: counter(ol-items) ".";
+    position: absolute;
+    left: - $fontsize * 1.5;
+
+
+ }
 }
 
 ul li{
   list-style: none;
+  margin-left: $fontsize * 1.5; 
+  position: relative;
   &::before{
     content: "—";
-    margin-right: $fontsize;
+    display: block;
+    position: absolute;
+    left: - $fontsize * 1.5;
+    
   }
 }
 
@@ -89,7 +120,7 @@ h1 + h2{
   font-size: 2rem;
   margin-bottom: 1*$leading;
   padding-bottom: 2*$leading;
-  margin-top: -$leading;
+  margin-top: -$leading * 1.5;
   color: black;
   // border-bottom: 3px solid slategray;
   font-weight: 400;
@@ -148,12 +179,19 @@ small{
 img{
   display: block;
   margin: 0  auto;
+  max-width: 100%;
 }
 
 img[alt*=wide]{
 width: 100vw;
+max-width: 100vw;
 position: relative;
+z-index: 1;
 margin-left: calc(300px - 50vw);
+@media(max-width: 800px){
+   margin-right: -24px;
+   margin-left: -24px;
+}
 }
 
 .container{
@@ -179,9 +217,12 @@ blockquote{
    padding: $leading 0;
    color: slategray;
    text-align: center;
-   max-width: 800px;
-   border-top: 2px solid silver;
-   border-bottom: 2px solid silver;
+   max-width: 80vw;
+   border-top: 2px solid slategray;
+   border-bottom: 2px solid slategray;
+   @media(max-width: 800px){
+     max-width: 100%;
+   }
    & > * {
      max-width: 100%;
      &:last-child{
@@ -202,16 +243,18 @@ pre{
 
   max-width: 100%;
   text-align: center;
-background-color: #263238;
+background-color: #dcdbdb;
 }
 
 pre code{
   display: inline-block;
   width: auto;
+  // min-width: 600px;
   margin: $leading auto;
-background-color: #263238;
+// background-color: #263238;
+background-color: #dcdbdb;
 padding: $leading;
-color: #cdd3de;
+// color: #cdd3de;
 }
 
 

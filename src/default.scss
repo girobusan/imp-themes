@@ -11,6 +11,7 @@ li{
   input[type=checkbox]{
     margin:0;
     margin-right: 6px;
+    margin-left: -1.2em;
     
   }
   label{
@@ -30,10 +31,15 @@ li{
 table{
   th{
     border-bottom: 1px solid gray;
+    vertical-align: bottom;
   }
   th,td{
-    padding: 4px 12px;
+    padding: 0.25em 0.5em;
     text-align: left;
+    line-height: 120%;
+  }
+  td{
+    border-bottom: 1px solid silver;
   }
 }
 
