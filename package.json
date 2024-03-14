@@ -4,12 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 2",
-    "typebase": "sass src/tbimp.scss:dist/tbase.css --style compressed",
-    "netart": "sass src/netart.scss:dist/netart.css --style compressed",
-    "netart-watch": "sass src/netart.scss:dist/netart.css --watch",
-    "watch": "sass -w src/netart.scss:test/netart.css src/tbimp_bw.scss:test/base_bw.css src/tbimp_bw_inverted.scss:test/base_bw_i.css  src/default.scss:test/style.css src/simplecss.scss:test/simplecss.css",
-    "build": "sass -w src/netart.scss:docs/netart.css src/tbimp_bw.scss:docs/base_bw.css src/tbimp_bw_inverted.scss:docs/base_bw_i.css  src/default.scss:docs/style.css src/simplecss.scss:docs/simplecss.css"
+    "watch": "./automation/watch.sh",
+    "build": "./automation/build.sh"
   },
   "author": "",
   "license": "ISC",

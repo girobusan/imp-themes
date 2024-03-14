@@ -1,0 +1,43 @@
+#cssSwitcher{
+  background: silver;
+  border-radius: 6px;
+  *{
+    all: initial;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  color: black;
+  font-family: sans-serif;
+  font-size: 16px;
+   input , select{
+     appearance: auto;
+   }
+   label{
+     display: block;
+     font-weight: 600;
+     font-size: 14px;
+     margin: 0;
+     padding:0;
+     margin-bottom: 4px;
+   }
+   select{
+     appearance: menulist-button;
+     font-family: sans-serif;
+     border: 1px solid gray;
+     background-color: white;
+     border-radius: 4px;
+     padding: 4px 8px;
+     margin: 0;
+     margin-bottom: 8px;
+   }
+   div{
+     display: block;
+     font-family: sans-serif;
+     a{
+      color: #315791;
+       cursor: pointer;
+     }
+   }
+
+}

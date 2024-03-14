@@ -1,7 +1,8 @@
 const styles = [
   { name: "Default" , css: "style.css" },
   { name: "NetArt" , css: "netart.css" },
-  { name: "TypeBase" , css: "tbase.css" },
+  { name: "BaseTypeBW" , css: "base_bw.css" },
+  { name: "BaseTypeBWI" , css: "base_bw_i.css" },
   { name: "SimpleCSS" , css: "simplecss.css" },
 ]
 
@@ -28,6 +29,8 @@ if(test) {
 if (container){
   const selector = document.createElement("select");
   const editLink = document.createElement("div");
+  const label = document.createElement("label");
+  label.innerHTML = "Choose Style";
   editLink.innerHTML = "<a href='?mode=edit' style='font-size: 14px'>edit text</a>";
   selector.addEventListener("change", e=>{
     const selindex = e.target.selectedIndex;
@@ -45,6 +48,7 @@ if (container){
       selector.appendChild(opt)
     }
   )
+  container.appendChild(label);
   container.appendChild(selector);
   container.appendChild(editLink);
 }else{

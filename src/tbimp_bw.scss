@@ -2,3 +2,6 @@
 @import "./colors/bw.scss";
 // @import "./colors/bw_inverted.scss";
 @import "./tbimp_layout.scss";
+h1,h2,h3{
+  color: $text;
+}
