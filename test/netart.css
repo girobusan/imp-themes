@@ -451,6 +451,13 @@ h1, h2, h3, h4, h5, h6 {
   color: black;
 }
 
+h1 {
+  max-width: 20em;
+  text-align: center;
+  margin: 0 auto;
+  color: slategray;
+}
+
 hr {
   margin-top: 24px;
   margin-bottom: 24px;
@@ -466,7 +473,6 @@ h1 {
   margin-bottom: 48px;
   margin-top: 48px;
   font-weight: 400;
-  color: black;
 }
 
 a {
@@ -489,6 +495,9 @@ h1 + h2 {
   margin-top: -36px;
   color: black;
   font-weight: 400;
+  max-width: 20em;
+  text-align: center;
+  color: slategray;
 }
 
 h2 {
@@ -611,6 +620,7 @@ pre {
   max-width: 100%;
   text-align: center;
   background-color: #dcdbdb;
+  overflow: auto;
 }
 
 pre code {
@@ -625,6 +635,8 @@ table {
   margin: 24px auto;
   border-collapse: collapse;
   margin-bottom: 48px;
+  overflow: auto;
+  overflow-x: scroll;
 }
 @media (max-width: 800px) {
   table {
@@ -647,6 +659,26 @@ table th {
 }
 table td {
   border: 1px solid silver;
+}
+
+img[alt*=wide] + em {
+  font-style: normal;
+  font-size: 0.8em;
+  width: 100vw;
+  display: block;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 0 1em;
+  margin-left: calc(300px - 50vw);
+  background-color: slategray;
+  color: white;
+}
+@media (max-width: 800px) {
+  img[alt*=wide] + em {
+    width: 100%;
+    margin-right: -24px;
+    margin-left: -24px;
+  }
 }
 
 li label {

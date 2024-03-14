@@ -1,23 +1,25 @@
-@use "./hljs/atom-one-light.min.css";
 @import "./utility/font_stacks.scss";
 @import "./sources/typebase.scss";
+// @import "./colors/bw.scss";
 
 body{
   font-family: $system-sans; 
-  color: #444;
+  color: $text;
   display: flex;
   flex-direction: column;
   padding: 0;
   margin: 0;
+  background-color: $background;
 }
 
 h1, h2, h3, h4, h5,h6{
   font-weight: 600;
   font-family: $system-serif; 
+  color: $text-alt;
 // font-family: 'Montserrat' , Tahoma ,   sans-serif;
 }
 
-a{ color: royalblue }
+a{ color: $text-accent }
 
 h1+h2{
   margin-top: 0em;
@@ -42,9 +44,9 @@ flex-grow: 1;
 #pageFooter{
 text-align: center;
 padding: 2rem;
-background-color: #444;
-color: #fafafa;
-a{ color: lightblue !important}
+background-color: $text-alt;
+color: $background;
+a{ color: $background-alt !important}
 }
 
 li input[type=checkbox]{
@@ -62,13 +64,13 @@ margin: 0 3px;
 // font-size: 80%;
 padding: 0.2em 0.4em;
 line-height: $leading;
-background-color: rgba(0,0,0,.1);
+background-color: $background-alt;
 border-radius: 4px;
 }
 
 pre code{
 display: block;
-background-color: rgba(0,0,0,.05);
+background-color: $background-alt;
 padding: 1rem;
 line-height: $leading;
 font-size: 1em;
@@ -96,7 +98,7 @@ line-height: 120%;
 }
 
 td{
-  border-right: 1px solid silver;
+  border-right: 1px solid $text-alt;
 vertical-align: top;
   &:last-child{
     border-right: 0;
@@ -104,7 +106,7 @@ vertical-align: top;
 
 }
 tr:last-child{
-  border-bottom: 1px solid silver;
+  border-bottom: 1px solid $text-alt;
 }
 
 hr{
@@ -124,7 +126,7 @@ background-color: transparent;
 
 	color: orange;
 
-	background-image: linear-gradient(90deg, gray, gray 33.33%, transparent 33.33%, transparent 100%);
+	background-image: linear-gradient(90deg, $text-alt, $text-alt 33.33%, transparent 33.33%, transparent 100%);
 
 	background-size: 5px 100%;
 
@@ -136,7 +138,7 @@ font-weight: 400;
 }
 
 tr:nth-child(odd) td{
-background-color: rgba(0,0,0,.1);
+background-color: $background-alt;
 }
  
 blockquote{
@@ -147,7 +149,7 @@ blockquote{
   margin-right: 0;
   font-size: 1.4em;
   line-height: 140%;
-  color: gray;
+  color: $text-alt;
   position: relative;
   &:before{
     content: " ";
@@ -162,6 +164,6 @@ blockquote{
     background-size: 10px 6px;
     // border: 1px solid red;
 
-	background-image: linear-gradient(0deg, gray, gray 33.33%, transparent 33.33%, transparent 100%);
+	background-image: linear-gradient(0deg, $text-alt, $text-alt 33.33%, transparent 33.33%, transparent 100%);
   }
 }

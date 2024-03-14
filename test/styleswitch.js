@@ -1,7 +1,8 @@
 const styles = [
   { name: "Default" , css: "style.css" },
   { name: "NetArt" , css: "netart.css" },
-  { name: "TypeBase" , css: "tbase.css" },
+  { name: "BaseTypeBW" , css: "base_bw.css" },
+  { name: "BaseTypeBWI" , css: "base_bw_i.css" },
   { name: "SimpleCSS" , css: "simplecss.css" },
 ]
 

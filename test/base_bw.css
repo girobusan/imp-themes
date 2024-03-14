@@ -168,22 +168,22 @@ code {
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  color: #fafafa;
+  color: #333;
   display: flex;
   flex-direction: column;
   padding: 0;
   margin: 0;
-  background-color: #222;
+  background-color: #fff;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   font-family: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, serif;
-  color: #aaaaaa;
+  color: #888;
 }
 
 a {
-  color: #1b97a3;
+  color: royalblue;
 }
 
 h1 + h2 {
@@ -205,11 +205,11 @@ h1 + h2 {
 #pageFooter {
   text-align: center;
   padding: 2rem;
-  background-color: #aaaaaa;
-  color: #222;
+  background-color: #888;
+  color: #fff;
 }
 #pageFooter a {
-  color: #444 !important;
+  color: #f0f0f0 !important;
 }
 
 li input[type=checkbox] {
@@ -226,13 +226,13 @@ code {
   margin: 0 3px;
   padding: 0.2em 0.4em;
   line-height: 1.5rem;
-  background-color: #444;
+  background-color: #f0f0f0;
   border-radius: 4px;
 }
 
 pre code {
   display: block;
-  background-color: #444;
+  background-color: #f0f0f0;
   padding: 1rem;
   line-height: 1.5rem;
   font-size: 1em;
@@ -261,7 +261,7 @@ td, th {
 }
 
 td {
-  border-right: 1px solid #aaaaaa;
+  border-right: 1px solid #888;
   vertical-align: top;
 }
 td:last-child {
@@ -269,7 +269,7 @@ td:last-child {
 }
 
 tr:last-child {
-  border-bottom: 1px solid #aaaaaa;
+  border-bottom: 1px solid #888;
 }
 
 hr {
@@ -283,7 +283,7 @@ hr {
   height: 10px;
   border: none;
   color: orange;
-  background-image: linear-gradient(90deg, #aaaaaa, #aaaaaa 33.33%, transparent 33.33%, transparent 100%);
+  background-image: linear-gradient(90deg, #888, #888 33.33%, transparent 33.33%, transparent 100%);
   background-size: 5px 100%;
 }
 
@@ -293,7 +293,7 @@ th {
 }
 
 tr:nth-child(odd) td {
-  background-color: #444;
+  background-color: #f0f0f0;
 }
 
 blockquote {
@@ -304,7 +304,7 @@ blockquote {
   margin-right: 0;
   font-size: 1.4em;
   line-height: 140%;
-  color: #aaaaaa;
+  color: #888;
   position: relative;
 }
 blockquote:before {
@@ -318,7 +318,7 @@ blockquote:before {
   height: 100%;
   background-repeat: repeat;
   background-size: 10px 6px;
-  background-image: linear-gradient(0deg, #aaaaaa, #aaaaaa 33.33%, transparent 33.33%, transparent 100%);
+  background-image: linear-gradient(0deg, #888, #888 33.33%, transparent 33.33%, transparent 100%);
 }
 
-/*# sourceMappingURL=tbase.css.map */
+/*# sourceMappingURL=base_bw.css.map */
