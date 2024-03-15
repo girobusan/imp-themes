@@ -18,7 +18,7 @@ function setTheme( arr , name ){
     window.settings.viewCSS = css;
     const nm = document.getElementById("themeName");
     if(nm){ nm.innerHTML = name }
-    if(cssLnk){ cssLnk.href=css }
+    if(cssLnk){ cssLnk.href=css ; cssLink.download=css }
   }
 }
 const container = document.getElementById("cssSwitcher");
@@ -35,7 +35,7 @@ if (container){
   const editLink = document.createElement("div");
   const label = document.createElement("label");
   label.innerHTML = "Choose Style";
-  editLink.innerHTML = "<a href='?mode=edit' style='font-size: 14px'>edit text</a> | <a href='style.css' id='getCSSLink'>get css</a>";
+  editLink.innerHTML = "<a href='?mode=edit' style='font-size: 14px'>edit text</a> | <a href='style.css' download='style.css' id='getCSSLink'>get css</a>";
   selector.addEventListener("change", e=>{
     const selindex = e.target.selectedIndex;
     setTheme( styles , styles[selindex].name );
