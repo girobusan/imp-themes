@@ -18,7 +18,7 @@ function setTheme( arr , name ){
     window.settings.viewCSS = css;
     const nm = document.getElementById("themeName");
     if(nm){ nm.innerHTML = name }
-    if(cssLnk){ cssLnk.href=css ; cssLink.download=css }
+    if(cssLnk){ cssLnk.href=css ; cssLnk.download=css }
   }
 }
 const container = document.getElementById("cssSwitcher");
