@@ -1,8 +1,10 @@
 const styles = [
   { name: "Default" , css: "style.css" },
+  { name: "DefaultInv" , css: "style_i.css" },
   { name: "NetArt" , css: "netart.css" },
   { name: "BaseTypeBW" , css: "base_bw.css" },
   { name: "BaseTypeBWI" , css: "base_bw_i.css" },
+  { name: "BaseTypeC1" , css: "base_c1.css" },
   { name: "SimpleCSS" , css: "simplecss.css" },
 ]
 
@@ -11,10 +13,12 @@ function setTheme( arr , name ){
   if(s.length>0){
     const css = s[0].css;
     const cssEl = document.getElementById("viewCSS");
+    const cssLnk = document.getElementById("getCSSLink");
     cssEl.setAttribute("href" , css);
     window.settings.viewCSS = css;
     const nm = document.getElementById("themeName");
     if(nm){ nm.innerHTML = name }
+    if(cssLnk){ cssLnk.href=css }
   }
 }
 const container = document.getElementById("cssSwitcher");
@@ -31,7 +35,7 @@ if (container){
   const editLink = document.createElement("div");
   const label = document.createElement("label");
   label.innerHTML = "Choose Style";
-  editLink.innerHTML = "<a href='?mode=edit' style='font-size: 14px'>edit text</a>";
+  editLink.innerHTML = "<a href='?mode=edit' style='font-size: 14px'>edit text</a> | <a href='style.css' id='getCSSLink'>get css</a>";
   selector.addEventListener("change", e=>{
     const selindex = e.target.selectedIndex;
     setTheme( styles , styles[selindex].name );

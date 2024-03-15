@@ -1,0 +1,14 @@
+@use "./hljs/atom-one-light.min.css";
+@import "./colors/paper.scss";
+// @import "./colors/bw_inverted.scss";
+@import "./tbimp_layout.scss";
+
+hr{
+  
+	background-image: linear-gradient(90deg, $text-accent, $text-accent 33.33%, transparent 33.33%, transparent 100%);
+}
+
+tbody tr:last-child,table tr td{
+  border-color: darken( $background , 15% );
+}
+

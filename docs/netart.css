@@ -498,6 +498,7 @@ h1 + h2 {
   max-width: 20em;
   text-align: center;
   color: slategray;
+  line-height: 120%;
 }
 
 h2 {
