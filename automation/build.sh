@@ -6,7 +6,8 @@ npx sass  \
   src/tbimp_c1.scss:docs/base_c1.css\
   src/default.scss:docs/style.css\
   src/default_i.scss:docs/style_i.css\
-  src/simplecss.scss:docs/simplecss.css
+  src/simplecss.scss:docs/simplecss.css\
+  --no-source-map
 
 cp test/sampler.html docs/
 cp test/index.html docs/
