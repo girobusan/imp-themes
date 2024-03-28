@@ -56,7 +56,7 @@ License URL ... https://raw.githubusercontent.com/matejlatin/Gutenberg/master/li
   }
 }
 .toggleWrapper {
-  display: block;
+  display: none;
   position: fixed;
   top: 26px;
   right: 26px;
@@ -783,7 +783,6 @@ body, html {
   margin: 0;
   padding: 0;
   width: 100%;
-  min-height: 100vh;
 }
 
 li input[type=checkbox] {
