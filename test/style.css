@@ -823,6 +823,8 @@ body footer#pageFooter {
 @media (max-width: 800px) {
   body footer#pageFooter {
     width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 
