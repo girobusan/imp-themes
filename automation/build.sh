@@ -7,7 +7,8 @@ npx sass  \
   src/default.scss:docs/style.css\
   src/default_i.scss:docs/style_i.css\
   src/simplecss.scss:docs/simplecss.css\
-  --no-source-map
+  --no-source-map\
+  --style=compressed
 
 cp test/sampler.html docs/
 cp test/index.html docs/

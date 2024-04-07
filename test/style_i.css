@@ -783,6 +783,7 @@ body, html {
   margin: 0;
   padding: 0;
   width: 100%;
+  background-color: white;
 }
 
 li input[type=checkbox] {
@@ -795,7 +796,7 @@ li label {
 }
 
 .container {
-  margin-top: 1rem;
+  padding-top: 1rem;
 }
 @media (max-width: 800px) {
   .container {
@@ -803,6 +804,10 @@ li label {
     padding-left: 16px;
     padding-right: 16px;
   }
+}
+
+p > img {
+  margin-bottom: 0;
 }
 
 table th {
@@ -827,9 +832,9 @@ body footer#pageFooter {
 }
 @media (max-width: 800px) {
   body footer#pageFooter {
-    width: 100%;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    width: calc(100% - 2rem);
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 }
 

@@ -1,4 +1,5 @@
 .DS_Store
+test/
 node_modules/
 refs/
 libs/

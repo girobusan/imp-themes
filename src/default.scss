@@ -4,7 +4,9 @@ body, html{
   margin:0;
   padding:0;
   width:100%;
+  background-color: white;
 }
+
 
 li{
   input[type=checkbox]{
@@ -19,12 +21,16 @@ li{
 }
 
 .container{
-  margin-top:1rem;
+  padding-top:1rem;
   @media(max-width:800px){
     width: 100%;
     padding-left: 16px;
     padding-right: 16px;
   }
+}
+
+p > img{
+  margin-bottom: 0;
 }
 
 table{
@@ -50,9 +56,9 @@ body footer#pageFooter{
   padding-bottom: 3rem;
   margin-top: 3rem;
   @media(max-width: 800px){
-    width: 100%;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    width: calc( 100% - 2rem );
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 }
 
