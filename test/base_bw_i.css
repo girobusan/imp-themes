@@ -248,6 +248,8 @@ table {
   border-collapse: collapse;
   font-size: 0.8em;
   line-height: 120%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 td, th {
@@ -287,6 +289,7 @@ hr {
 th {
   background-color: transparent;
   font-weight: 400;
+  padding-left: 0;
 }
 
 tr:nth-child(odd) td {
