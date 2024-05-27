@@ -7,6 +7,7 @@ npx sass  \
   src/default.scss:docs/style.css\
   src/default_i.scss:docs/style_i.css\
   src/simplecss.scss:docs/simplecss.css\
+  src/awsm_imp.scss:docs/awsm_imp.css\
   --no-source-map\
   --style=compressed
 

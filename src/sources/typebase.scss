@@ -29,7 +29,10 @@ html {
 }
 /* Copy & Lists */
 
-p {
+p ,
+main > div,
+.container > div
+{
     line-height: $leading;
     margin-top: $leading;
     margin-bottom: 0;

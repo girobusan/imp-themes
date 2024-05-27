@@ -1,0 +1,109 @@
+@import "./awsm/awsm_cleaned.scss";
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+//font
+html{
+
+    font-family:"PT Serif",Georgia,serif;
+    color: #444;
+}
+
+//fixes
+html , body{
+  *{
+    box-sizing: border-box;
+  }
+}
+p:empty{
+  display: none;
+}
+ul , ol{
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+}
+
+//first header
+
+.container h1:first-child{
+  margin-top: 0;
+}
+
+//width
+.container{
+   padding-top: 6rem; 
+   p , 
+   h1,h2,h3,h4,h5,h6,
+   pre,
+   blockquote,
+   video, audio , 
+   ul , ol
+   {
+     
+     max-width: 40rem;
+     margin-left: auto;
+     margin-right: auto;
+   }
+}
+// markdown specific
+
+li input[type*=checkbox]{
+  margin-left: -1.5em;
+  margin-right: 1em;
+}
+
+//center image
+p img{
+  margin-left: 50%;
+  transform: translateX(-50%);
+  max-width: 100vw;
+
+}
+
+// float right
+
+p img[alt*=right]{
+    float:right;
+    margin-bottom:.5em;
+    transform: none;
+    margin-left:.5em;
+    @media(max-width: 600px){
+      &{
+        float: none;
+        margin: 0;
+        display: block;
+        max-width: 100%;
+        margin: 1rem auto;
+      }
+    }
+}
+
+// fit to column
+
+p img[alt*=fit]{
+   width: 40rem;
+   @media(max-width:600px){
+     width: 100%;
+   }
+}
+
+//make caption
+
+p img + small, p img + em{
+  display: inline-block;
+  width: 100%;
+  font-size: 0.8em;
+  line-height: 100%;
+}
+
+//table +
+table{
+  table-layout: auto;
+  margin: 1em auto;
+  // display: block;
+  thead, tbody{
+    margin: 0 auto;
+  }
+  
+  td{
+    max-width: 33vw;
+  }
+}

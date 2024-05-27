@@ -6,4 +6,5 @@ npx sass -w \
   src/tbimp_c1.scss:test/base_c1.css\
   src/default.scss:test/style.css\
   src/default_i.scss:test/style_i.css\
-  src/simplecss.scss:test/simplecss.css
+  src/simplecss.scss:test/simplecss.css\
+  src/awsm_imp.scss:test/awsm_imp.css
